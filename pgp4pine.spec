@@ -11,11 +11,12 @@ Group:		Applications/Text
 Source0:	http://pgp4pine.flatline.de/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-overflow.patch
-URL:		http://pgp4pine.flatline.de
+URL:		http://pgp4pine.flatline.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	gnupg
 Requires:	pine
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A filter for Pine to encrypt/sign your Mail with PGP or GPG.
