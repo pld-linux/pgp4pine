@@ -4,12 +4,13 @@ Summary(pl):	Nak³adka na Pine i GnuPG/PGP2/PGP5/PGP6
 Summary(pt_BR):	Um filtro para o Pine e GnuPG/PGP2/PGP5/PGP6
 Name:		pgp4pine
 Version:	1.76
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		Holger Lamm <holger@flatline.de>
 Group:		Applications/Text
 Source0:	http://pgp4pine.flatline.de/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-overflow.patch
 URL:		http://pgp4pine.flatline.de
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -34,6 +35,7 @@ ou GPG.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
