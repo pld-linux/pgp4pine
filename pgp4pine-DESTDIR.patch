@@ -1,0 +1,25 @@
+--- pgp4pine-1.76/pgp4pine/docs/en/Makefile.in~	Fri Jan 18 08:45:37 2002
++++ pgp4pine-1.76/pgp4pine/docs/en/Makefile.in	Fri Jan 18 08:45:37 2002
+@@ -162,14 +162,14 @@
+ 
+ 
+ install-data-local:
+-	$(mkinstalldirs) $(docdir)/pgp4pine/
+-	$(INSTALL_DATA) FAQ $(docdir)/pgp4pine/FAQ
+-	$(mkinstalldirs) $(docdir)/pgp4pine/
+-	$(INSTALL_DATA) PGP_MIME $(docdir)/pgp4pine/PGP_MIME
+-	$(mkinstalldirs) $(mandir)/man1/
+-	$(INSTALL_DATA) pgp4pine.1 $(mandir)/man1/pgp4pine.1
+-	$(mkinstalldirs) $(docdir)/pgp4pine/
+-	$(INSTALL_DATA) pgp4pinerc.example $(docdir)/pgp4pine/pgp4pinerc.example
++	$(mkinstalldirs) $(DESTDIR)$(docdir)/pgp4pine/
++	$(INSTALL_DATA) FAQ $(DESTDIR)$(docdir)/pgp4pine/FAQ
++	$(mkinstalldirs) $(DESTDIR)$(docdir)/pgp4pine/
++	$(INSTALL_DATA) PGP_MIME $(DESTDIR)$(docdir)/pgp4pine/PGP_MIME
++	$(mkinstalldirs) $(DESTDIR)$(mandir)/man1/
++	$(INSTALL_DATA) pgp4pine.1 $(DESTDIR)$(mandir)/man1/pgp4pine.1
++	$(mkinstalldirs) $(DESTDIR)$(docdir)/pgp4pine/
++	$(INSTALL_DATA) pgp4pinerc.example $(DESTDIR)$(docdir)/pgp4pine/pgp4pinerc.example
+ 
+ uninstall-local:
+ 	-rm -f $(docdir)/pgp4pine/FAQ
