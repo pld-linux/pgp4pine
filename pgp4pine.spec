@@ -9,6 +9,7 @@ License:	GPL
 Vendor:		Holger Lamm <holger@flatline.de>
 Group:		Applications/Text
 Source0:	http://pgp4pine.flatline.de/%{name}-%{version}.tar.gz
+# Source0-md5:	235c44e0ef18dc3d0c78b3038c2ac56a
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-overflow.patch
 URL:		http://pgp4pine.flatline.de/
