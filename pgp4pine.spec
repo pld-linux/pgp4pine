@@ -4,7 +4,7 @@ Summary(pl):	Nak³adka na Pine i GnuPG/PGP2/PGP5/PGP6
 Summary(pt_BR):	Um filtro para o Pine e GnuPG/PGP2/PGP5/PGP6
 Name:		pgp4pine
 Version:	1.76
-Release:	1
+Release:	2
 License:	GPL
 Vendor:		Holger Lamm <holger@flatline.de>
 Group:		Applications/Text
