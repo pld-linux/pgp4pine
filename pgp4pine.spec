@@ -17,6 +17,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	pine
+
 %description
 A filter for Pine to encrypt/sign your Mail with PGP or GPG.
 
@@ -24,13 +25,13 @@ A filter for Pine to encrypt/sign your Mail with PGP or GPG.
 Un filtro para el Pine encriptar/assinar su correo electronico con PGP
 o GPG.
 
+%description -l pl
+Filtr dla Pine umo¿liwiaj±cy podpisywanie/szyfrowanie poczty przy u¿yciu
+PGP lub GPG.
+
 %description -l pt_BR
 Um filtro para o Pine encriptar/assinar seu correio eletrônico com PGP
 ou GPG.
-
-%description -l pl
-Filtr dla Pine umo¿liwiaj±cy podpisywanie/szyfrowanie poczty przy u¿yciu
-PGP lub GPG
 
 %prep
 %setup -q
@@ -47,22 +48,23 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-#cp $RPM_BUILD_ROOT%{_docdir}/pgp4pine/* .
+
+gzip -9nf INSTALL README pgp4pine/docs/en/{FAQ,PGP_MIME}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
-%defattr(644,root,root,755)
-%doc INSTALL README pgp4pine/docs/en/FAQ pgp4pine/docs/en/PGP_MIME pgp4pine/docs/en/pgp4pinerc.example
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man?/*
-
 %post
 echo "ATTENTION! Installation is not yet complete."
-echo "You must configure Pine to use pgp4pine !"
-echo "Read %{_docdir}/pgp4pine/INSTALL to know how !"
+echo "You must configure Pine to use pgp4pine!"
+echo "Read %{_docdir}/%{name}-%{version}/INSTALL.gz to know how."
+
+%files
+%defattr(644,root,root,755)
+%doc INSTALL.gz README.gz pgp4pine/docs/en/FAQ.gz pgp4pine/docs/en/PGP_MIME.gz
+%doc pgp4pine/docs/en/pgp4pinerc.example
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man?/*
