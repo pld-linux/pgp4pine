@@ -24,8 +24,8 @@ Un filtro para el Pine encriptar/assinar su correo electronico con PGP
 o GPG.
 
 %description -l pl
-Filtr dla Pine umo¿liwiaj±cy podpisywanie/szyfrowanie poczty przy u¿yciu
-PGP lub GPG.
+Filtr dla Pine umo¿liwiaj±cy podpisywanie/szyfrowanie poczty przy
+u¿yciu PGP lub GPG.
 
 %description -l pt_BR
 Um filtro para o Pine encriptar/assinar seu correio eletrônico com PGP
