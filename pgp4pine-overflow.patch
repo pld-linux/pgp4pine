@@ -1,0 +1,15 @@
+--- pgp4pine-1.76/pgp4pine/menus.c.orig	Mon Apr  9 18:23:37 2001
++++ pgp4pine-1.76/pgp4pine/menus.c	Mon May 12 12:21:31 2003
+@@ -33,8 +33,10 @@
+        outFile=inFile; /* this usually is not 
+  			  executed, EOF breaks directly */
+        return;
+-     } 
+-     else if ((readline[i++]=c) == '\n')
++     }
++     readline[i]=c;
++     if (i < (CONSOLE_IO_LINE_LENGTH-2)) i++;
++     if (c == '\n')
+      {
+        readline[i]='\0';
+        fertig=1;
