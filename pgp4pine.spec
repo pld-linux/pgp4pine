@@ -38,8 +38,8 @@ ou GPG.
 %build
 rm -f missing
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--with-docdir=%{_datadir}/doc
 %{__make}
