@@ -50,8 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf INSTALL README pgp4pine/docs/en/{FAQ,PGP_MIME}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -62,7 +60,7 @@ echo "Read %{_docdir}/%{name}-%{version}/INSTALL.gz to know how."
 
 %files
 %defattr(644,root,root,755)
-%doc INSTALL.gz README.gz pgp4pine/docs/en/FAQ.gz pgp4pine/docs/en/PGP_MIME.gz
+%doc INSTALL README pgp4pine/docs/en/{FAQ,PGP_MIME}
 %doc pgp4pine/docs/en/pgp4pinerc.example
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
