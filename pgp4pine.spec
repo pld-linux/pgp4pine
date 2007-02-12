@@ -1,7 +1,7 @@
 Summary:	A wrapper for Pine and GnuPG/PGP2/PGP5/PGP6
-Summary(es):	Un filtro para el Pine y GnuPG/PGP2/PGP5/PGP6
-Summary(pl):	Nak≥adka na Pine i GnuPG/PGP2/PGP5/PGP6
-Summary(pt_BR):	Um filtro para o Pine e GnuPG/PGP2/PGP5/PGP6
+Summary(es.UTF-8):   Un filtro para el Pine y GnuPG/PGP2/PGP5/PGP6
+Summary(pl.UTF-8):   Nak≈Çadka na Pine i GnuPG/PGP2/PGP5/PGP6
+Summary(pt_BR.UTF-8):   Um filtro para o Pine e GnuPG/PGP2/PGP5/PGP6
 Name:		pgp4pine
 Version:	1.76
 Release:	3
@@ -22,16 +22,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A filter for Pine to encrypt/sign your Mail with PGP or GPG.
 
-%description -l es
+%description -l es.UTF-8
 Un filtro para el Pine encriptar/assinar su correo electronico con PGP
 o GPG.
 
-%description -l pl
-Filtr dla Pine umoøliwiaj±cy podpisywanie/szyfrowanie poczty przy
-uøyciu PGP lub GPG.
+%description -l pl.UTF-8
+Filtr dla Pine umo≈ºliwiajƒÖcy podpisywanie/szyfrowanie poczty przy
+u≈ºyciu PGP lub GPG.
 
-%description -l pt_BR
-Um filtro para o Pine encriptar/assinar seu correio eletrÙnico com PGP
+%description -l pt_BR.UTF-8
+Um filtro para o Pine encriptar/assinar seu correio eletr√¥nico com PGP
 ou GPG.
 
 %prep
