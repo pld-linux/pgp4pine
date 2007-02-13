@@ -1,7 +1,7 @@
 Summary:	A wrapper for Pine and GnuPG/PGP2/PGP5/PGP6
-Summary(es.UTF-8):   Un filtro para el Pine y GnuPG/PGP2/PGP5/PGP6
-Summary(pl.UTF-8):   Nakładka na Pine i GnuPG/PGP2/PGP5/PGP6
-Summary(pt_BR.UTF-8):   Um filtro para o Pine e GnuPG/PGP2/PGP5/PGP6
+Summary(es.UTF-8):	Un filtro para el Pine y GnuPG/PGP2/PGP5/PGP6
+Summary(pl.UTF-8):	Nakładka na Pine i GnuPG/PGP2/PGP5/PGP6
+Summary(pt_BR.UTF-8):	Um filtro para o Pine e GnuPG/PGP2/PGP5/PGP6
 Name:		pgp4pine
 Version:	1.76
 Release:	3
